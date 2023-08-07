@@ -1,0 +1,17 @@
+@startuml
+actor Customer
+participant "Order System" as OrderSystem
+participant "Stock" as Stock
+
+Customer -> OrderSystem: 1.Create Order
+OrderSystem --> Customer: 2. Return if not clear 
+Customer -> OrderSystem: 3.[For each order] * add item{product, qty}
+OrderSystem -> Stock: 4.Check availability[product, qty]
+Stock --> OrderSystem: 5.Return done
+OrderSystem --> Customer: Confirm Order
+Customer -> OrderSystem: Payment initiated
+OrderSystem -> OrderSystem: Authentication Process
+OrderSystem --> Customer: Order payment completed and order placed successfully
+
+@enduml
+

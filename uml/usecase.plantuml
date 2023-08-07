@@ -1,0 +1,18 @@
+@startuml
+left to right direction
+package "Online shopping" {
+actor "customer" as pm
+  actor "Product Owner" as po
+  usecase "Make payment" as UC1
+  usecase "Place Order" as UC2
+  usecase "Add to Cart" as UC3
+  usecase "Browse Products" as UC4
+  usecase "Check Stock" as UC5
+}
+pm --> UC1
+pm --> UC2
+pm --> UC3
+pm --> UC4
+po --> UC5
+po --> UC4
+@enduml

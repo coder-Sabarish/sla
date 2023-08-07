@@ -1,0 +1,135 @@
+@startuml
+
+title Online shopping system
+
+class "customer" as class1
+
+class "product" as class2
+
+class "Order" as class3
+
+class "Cart" as class4
+
+class "Payment" as class5
+
+class "deliver" as class6
+
+class "feedback" as class7
+
+class "Return" as class8
+
+class class1{
+
+    String Customer_Name
+
+    String Customer_ID
+
+    String Address
+
+    String product
+
+    String Email
+
+    Integer Phone_Number
+
+    void order()
+
+    void search()
+
+    void rating()
+
+}
+
+class class2{
+
+    String Product_name
+
+    String Product_colour
+
+    String Product_ID
+
+    Integer price
+
+    String description
+
+    void change_specification()
+
+    void add_to_cart()
+
+ 
+
+ 
+
+}
+
+class class3{
+
+    String product_ID
+
+    String Customer_ID
+
+    Integer price
+
+    String Date_and_time
+
+    void payment_method()
+
+ 
+
+}
+
+class class4{
+
+    String number_of_iteams
+
+    String Customer_ID
+
+    void cancel_the_product()
+
+}
+
+class class5{
+
+    Integer price
+
+    String Customer_ID
+
+    void payment_method()
+
+}
+
+class class6{
+
+    String Product
+
+    String Product_ID
+
+    void payment()
+
+}
+
+class class7{
+
+    String Quality
+
+    String Quantity
+
+    void ratings()
+
+}
+
+class class8{
+
+    String Damage
+
+    String color
+
+    String Quality
+
+    void refund()
+
+    void replace()
+
+}
+
+@enduml
