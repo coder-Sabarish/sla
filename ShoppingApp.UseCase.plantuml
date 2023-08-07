@@ -1,0 +1,17 @@
+@startuml
+title Online shopping system
+class "customer" as class1
+class "product" as class2
+class "Order" as class3
+class "Cart" as class4
+class "Payment" as class5
+class "deliver" as class6
+class "feedback" as class7
+class class1{
+    String CustomerName
+    Integer CustomerID
+    String product
+    void returnable()
+    void damaged()
+}
+@enduml
