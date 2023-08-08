@@ -8,11 +8,19 @@ actor "customer" as pm
   usecase "Add to Cart" as UC3
   usecase "Browse Products" as UC4
   usecase "Check Stock" as UC5
+  usecase "Give feedback and rating" as UC6
+  usecase "Cancel order" as UC7
+  usecase "Add Products" as UC8
+  usecase "Receive payments" as UC9
 }
 pm --> UC1
 pm --> UC2
 pm --> UC3
 pm --> UC4
+pm --> UC6
+pm --> UC7
 po --> UC5
 po --> UC4
+po --> UC8
+po --> UC9
 @enduml
